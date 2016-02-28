@@ -1,0 +1,236 @@
+html {
+    font-family: "Hiragino Mincho ProN", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-size: 87.5%;
+    line-height: 1.75;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+@media (min-width: 40em) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 60em) {
+    html {
+        font-size: 112.5%;
+    }
+}
+
+body {
+    margin: auto;
+    max-width: calc(100vw - 2em);
+    width: 40em;
+}
+
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    line-height: 1.75rem;
+    margin: 10.5rem 0 7rem;
+    padding-left: 0.1em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.625rem;
+    margin: 5.25rem 0 1.75rem;
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.875);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 3.5rem 0 1.75rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    line-height: 1.75rem;
+    margin: 3.5rem 0 1.75rem;
+}
+
+p {
+    margin: 1.75rem 0;
+}
+
+blockquote {
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+    margin: 3.5rem 2rem;
+}
+
+pre,
+code,
+samp,
+kbd {
+    font-family: "Menlo", "Consolas", monospace;
+    font-size: 1em;
+}
+
+pre {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    margin: 3.5rem 0;
+    padding: 1.3125rem 2rem;
+    overflow: auto;
+}
+
+code,
+samp,
+kbd {
+    color: rgba(0, 0, 0, 0.875)
+}
+
+figure {
+    margin: 3.5rem 2rem;
+}
+
+figure img {
+    border: 1px dashed rgba(0, 0, 0, 0.25);
+    padding: 1px;
+}
+
+figcaption {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    margin-top: 0.875rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+strong {
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+a {
+    color: #0070e0;
+}
+
+sup a {
+    font-family: "Menlo", "Consolas", monospace;
+    font-weight: bold;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    text-decoration: none;
+}
+
+.Credit {
+    margin: 3.5rem 0;
+    text-align: right;
+}
+
+.Credit * {
+    font-weight: normal;
+    margin: 0;
+}
+
+.Credit .translator .name {
+    font-weight: normal;
+}
+
+.Thanks {
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+    margin: 1.75rem 2rem;
+}
+
+.Thanks::before {
+    content: "* * *";
+    display: block;
+    text-align: center;
+}
+
+.Footnotes {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    margin: 3.5rem 0;
+}
+
+.Footnotes h2 {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    line-height: 1.3125rem;
+    margin: 3.5rem 0 1.3125rem;
+}
+
+.Footnotes ol {
+    margin: 1.3125rem 0;
+    padding-left: 2rem;
+}
+
+.Footnotes li {
+    margin: 1.3125rem 0;
+}
+
+.Footnotes li:target {
+    animation:yellow-fade 2.5s;
+}
+
+.Footnotes a[href^="#footnoteref-"] {
+    text-decoration: none;
+}
+
+[role="contentinfo"] {
+    border-top: 1px dashed rgba(0, 0, 0, 0.25);
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    padding-top: 3.5rem;
+    margin: 7rem 0 3.5rem;
+}
+
+[role="contentinfo"] > :first-child {
+    margin-top: 0;
+}
+
+[role="contentinfo"] th {
+    padding: 0;
+    text-align: right;
+}
+
+[role="contentinfo"] td {
+    padding: 0 0 0 1em;
+}
+
+@keyframes yellow-fade{
+    5%{ background-color: #ffff80; }
+}
