@@ -83,7 +83,7 @@
 
 <p>変数を利用していると、いつもスコープについての疑問が頭をもたげてきます。いったいこの変数のスコープはグローバルなのか? ファイルやモジュール? それともブロック?</p>
 
-<p>しかし CSS はそもそも HTML をスタイリングするものだということを考えると、変数のスコープとしてもっと便利なものがあることに気づきます。それは DOM 要素です。とは言えプリプロセッサーはブラウザーで実行されるものではなく、マークアップを参照することもできないので、これは不可能です。</p>
+<p>しかし CSS はそもそも HTML をスタイリングするものだということを考えると、変数のスコープとしてもっと便利なものがあることに気づきます。それは DOM 要素です。とは言えプリプロセッサーはブラウザーで実行されるものではなく、マークアップを参照することもできないので、DOM スコープの変数というのは無理な相談です。</p>
 
 <p>たとえば、ユーザーがサイトの設定で文字サイズを大きくしていたら、<code>&lt;html&gt;</code> 要素に <code>user-setting-large-text</code> というクラスを追加したいとしましょう。そのクラスがあるときは、より大きい <code>$font-size</code> 変数の値が適用されてほしいわけです。</p>
 
@@ -420,7 +420,7 @@ View the demo on CodePen: <a href="http://codepen.io/philipwalton/pen/epLWNO/?ed
 <h2>脚注</h2>
 <ol>
 <li id="footnote-1">Chrome の「試験運用版のウェブ プラットフォームの機能」フラグを有効にするには、アドレスバーに <code>about:flags</code> と入力し、「試験運用版のウェブ プラットフォームの機能」を検索し、「有効にする」をクリックする。<a href="#footnoteref-1">↩</a></li>
-<li id="footnote-2"><code>--</code> プロパティの利用については、タブ・アトキンスのこの<a href="https://github.com/w3c/webcomponents/issues/300#issuecomment-144551648">Github コメント</a>で (カスタム要素へのスタイリングの話題として) 言及されている。さらに、タブは www-style メーリングリストの<a href="https://lists.w3.org/Archives/Public/www-style/2015Dec/0002.html">とある投稿</a>で、<code>--</code> をすぐにでも仕様に取り込むべきと進言している。<a href="#footnoteref-2">↩</a></li>
+<li id="footnote-2"><code>--</code> プロパティの利用については、タブ・アトキンスのこの<a href="https://github.com/w3c/webcomponents/issues/300#issuecomment-144551648">Github コメント</a>で (カスタム要素へのスタイリングの話題として) 言及されている。さらに、タブは www-style メーリングリストの<a href="https://lists.w3.org/Archives/Public/www-style/2015Dec/0002.html">投稿</a>で、<code>--</code> をすぐにでも仕様に取り込むべきと進言している。<a href="#footnoteref-2">↩</a></li>
 </ol>
 </aside>
 
