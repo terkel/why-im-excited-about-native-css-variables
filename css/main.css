@@ -71,6 +71,12 @@ p {
     margin: 1.75rem 0;
 }
 
+ol,
+ul {
+    margin: 1.75rem 0;
+    padding-left: 2rem;
+}
+
 blockquote {
     font-size: 0.875rem;
     line-height: 1.75rem;
@@ -195,7 +201,6 @@ sup a {
 
 .Footnotes ol {
     margin: 1.3125rem 0;
-    padding-left: 2rem;
 }
 
 .Footnotes li {
@@ -223,8 +228,10 @@ sup a {
 }
 
 [role="contentinfo"] th {
+    font-weight: normal;
     padding: 0;
     text-align: right;
+    white-space: nowrap;
 }
 
 [role="contentinfo"] td {
