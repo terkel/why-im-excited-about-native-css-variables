@@ -18,7 +18,7 @@
 <p>鈴木丈&ensp;訳</p>
 </div>
 
-<p><time datetime="2015-11">数週間前</time>、CSS変数（より正確には<a href="https://drafts.csswg.org/css-variables/">CSSカスタム・プロパティ</a>）が、Chrome Canaryの「試験運用版のウェブ プラットフォームの機能」フラグ<sup><a href="#footnote-1" id="footnoteref-1">1</a></sup>を有効にすることで利用できるようになりました。</p>
+<p><time datetime="2015-11">数週間前</time>、CSS変数（より正確には<a href="https://drafts.csswg.org/css-variables/">CSSカスタム・プロパティ</a>）が、Chrome Canaryの「試験運用版のウェブ プラットフォームの機能」フラグ<sup><a href="#fn:chrome" id="fnref:chrome">1</a></sup>を有効にすることで利用できるようになりました。</p>
 
 <p>Chrome のエンジニアである<a href="https://twitter.com/addyosmani">アディ・オスマーニ</a>がそのリリースについてはじめてツイートしたとき、多くの<a href="https://twitter.com/joshlangner/status/661608288707026944">否定的</a>で、<a href="https://twitter.com/kuizinas/status/661600615911526401">敵対的</a>で、<a href="https://twitter.com/DanTup/status/661609987047866368">懐疑的</a>な声が寄せられました。その量は驚くべきものでした。少なくともCSS変数にわくわくしいてる僕にとっては。</p>
 
@@ -377,7 +377,7 @@ View the demo on CodePen: <a href="http://codepen.io/philipwalton/pen/epLWNO/?ed
   --propertyName: initial;
 }</code></pre>
 
-<p>まだ仕様に取り入れられてはいませんが、すべてのカスタム・プロパティをリセットできる<code>--</code>プロパティというものが検討されています<sup><a href="#footnote-2" id="footnoteref-2">2</a></sup>。またもし特定のプロパティだけ継承されるようホワイトリストに加えたいなら、<code>inherit</code>を指定すれば、それらのプロパティは通常どおりに振る舞います。</p>
+<p>まだ仕様に取り入れられてはいませんが、すべてのカスタム・プロパティをリセットできる<code>--</code>プロパティというものが検討されています<sup><a href="#fn:atkins" id="fnref:atkins">2</a></sup>。またもし特定のプロパティだけ継承されるようホワイトリストに加えたいなら、<code>inherit</code>を指定すれば、それらのプロパティは通常どおりに振る舞います。</p>
 
 <pre><code>.MyComponent {
   /* すべてのカスタム・プロパティをリセット */
@@ -420,13 +420,11 @@ View the demo on CodePen: <a href="http://codepen.io/philipwalton/pen/epLWNO/?ed
 
 
 
-<aside class="Footnotes">
 <h2>脚注</h2>
-<ol>
-<li id="footnote-1">Chromeの「試験運用版のウェブ プラットフォームの機能」フラグを有効にするには、アドレスバーに<code>about:flags</code>と入力し、「試験運用版のウェブ プラットフォームの機能」を検索し、「有効にする」をクリックする。<a href="#footnoteref-1">↩</a></li>
-<li id="footnote-2"><code>--</code>プロパティの利用については、タブ・アトキンスのこの<a href="https://github.com/w3c/webcomponents/issues/300#issuecomment-144551648">Githubコメント</a>で（カスタム要素へのスタイリングの話題として）言及されている。さらに、タブはwww-styleメーリングリストの<a href="https://lists.w3.org/Archives/Public/www-style/2015Dec/0002.html">投稿</a>で、<code>--</code>をすぐにでも仕様に取り込むべきと進言している。<a href="#footnoteref-2">↩</a></li>
+<ol class="Footnotes">
+<li id="fn:chrome">Chromeの「試験運用版のウェブ プラットフォームの機能」フラグを有効にするには、アドレスバーに<code>about:flags</code>と入力し、「試験運用版のウェブ プラットフォームの機能」を検索し、「有効にする」をクリックする。<a href="#fnref:chrome">↩</a></li>
+<li id="fn:atkins"><code>--</code>プロパティの利用については、タブ・アトキンスのこの<a href="https://github.com/w3c/webcomponents/issues/300#issuecomment-144551648">Githubコメント</a>で（カスタム要素へのスタイリングの話題として）言及されている。さらに、タブはwww-styleメーリングリストの<a href="https://lists.w3.org/Archives/Public/www-style/2015Dec/0002.html">投稿</a>で、<code>--</code>をすぐにでも仕様に取り込むべきと進言している。<a href="#fnref:atkins">↩</a></li>
 </ol>
-</aside>
 
 
 
