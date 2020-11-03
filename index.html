@@ -273,9 +273,11 @@ View the demo on CodePen: <a href="http://codepen.io/philipwalton/pen/epLWNO/?ed
 
 <p><a href="https://twitter.com/csswizardry">ハリー・ロバーツ</a>は先日、この件について<a href="http://csswizardry.com/2015/06/contextual-styling-ui-components-nesting-and-implementation-detail/">こんな記事</a>を書いています。</p>
 
+<figure>
 <blockquote>
 <p>あるUIコンポーネントが、置かれた場所によって見栄えを変えたいのだとすれば、それはそのデザイン・システムが失敗しているということだ。…すべてはお互いに無関心でいられるようにデザインすべきだ。すべては「このコンポーネントは…」というふうにデザインすべきで、「このコンポーネントが何かの中にあるときは…」とすべきではない。</p>
 </blockquote>
+</figure>
 
 <p>僕もこの件では（そしてこれ以外の多くのことについても）ハリーに賛成です。しかし一方で、これだけ多くの人がこの問題について安易な方法をとっているということは、じつはもっと大きな問題があることを示しているのではないでしょうか。それは、CSSの表現には限界があり、ほとんどの人は現在の「ベスト・プラクティス」に満足していない、ということです。</p>
 
@@ -289,9 +291,11 @@ View the demo on CodePen: <a href="http://codepen.io/philipwalton/pen/epLWNO/?ed
 
 <p>このアプローチには多くの問題があります（この問題については僕の<a href="/articles/css-architecture/#modifying-components-based-on-who-their-parents-are">CSS Architecture</a>という記事で説明しています）。このパターンがコードとして「臭う」理由のひとつは、ソフトウェア開発における<a href="https://ja.wikipedia.org/wiki/%E9%96%8B%E6%94%BE/%E9%96%89%E9%8E%96%E5%8E%9F%E5%89%87">開放/閉鎖原則</a>に反していることです。この例では閉じたコンポーネントに変更を加えてしまっています。</p>
 
+<figure>
 <blockquote>
 <p>ソフトウェアの単位（クラス、モジュール、関数など）は、拡張に対して開いていて、修正に対して閉じているべきである。</p>
 </blockquote>
+</figure>
 
 <p>カスタム・プロパティは、コンポーネント定義のパラダイムを興味深い方法で変えてくれます。カスタム・プロパティによって、僕らははじめて、拡張に対して開かれたコンポーネントを書けるようになるのです。例を挙げましょう。</p>
 
