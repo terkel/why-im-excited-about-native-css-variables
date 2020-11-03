@@ -42,7 +42,7 @@
 <p>僕はこの記事で、プリプロセッサーの変数にはできないけどCSSカスタム・プロパティにはできることについて考察します。また、カスタム・プロパティが可能にする新たなデザイン・パターンのデモもいくつか紹介します。そして、将来僕たちはプリプロセッサー変数とカスタム・プロパティそれぞれの長所を活かして両方を使うようになる、と僕は考えているんですが、その理由について論じます。</p>
 
 <div class="Callout">
-<p><strong>注意</strong>：この記事はCSSカスタム・プロパティの入門記事ではありません。もしCSSカスタム・プロパティについて聞いたことがないか、どんなものなのかよく知らないなら、まず最初に<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">予習しておく</a>ことをすすめます。</p>
+<p><strong>注意</strong>：この記事はCSSカスタム・プロパティの入門記事ではありません。もしCSSカスタム・プロパティについて聞いたことがないか、どんなものなのかよく知らないなら、まず最初に<a href="https://developer.mozilla.org/ja/docs/Web/CSS/Using_CSS_custom_properties">予習しておく</a>ことをすすめます。</p>
 </div>
 
 
@@ -293,7 +293,7 @@ View the demo on CodePen: <a href="http://codepen.io/philipwalton/pen/epLWNO/?ed
 /* ボタンがヘッダーの中にある場合はスタイルが異なる */
 .Header .Button { }</code></pre>
 
-<p>このアプローチには多くの問題があります（この問題については僕の<a href="/articles/css-architecture/#modifying-components-based-on-who-their-parents-are">CSS Architecture</a>という記事で説明しています）。このパターンがコードとして「臭う」理由のひとつは、ソフトウェア開発における<a href="https://ja.wikipedia.org/wiki/%E9%96%8B%E6%94%BE/%E9%96%89%E9%8E%96%E5%8E%9F%E5%89%87">開放/閉鎖原則</a>に反していることです。この例では閉じたコンポーネントに変更を加えてしまっています。</p>
+<p>このアプローチには多くの問題があります（この問題については僕の<a href="https://philipwalton.com/articles/css-architecture/#modifying-components-based-on-who-their-parents-are">CSS Architecture</a>という記事で説明しています）。このパターンがコードとして「臭う」理由のひとつは、ソフトウェア開発における<a href="https://ja.wikipedia.org/wiki/%E9%96%8B%E6%94%BE/%E9%96%89%E9%8E%96%E5%8E%9F%E5%89%87">開放／閉鎖原則</a>に反していることです。この例では閉じたコンポーネントに変更を加えてしまっています。</p>
 
 <figure>
 <blockquote>
